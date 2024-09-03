@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Furniro</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #f8f8f8;
+        }
+
+        .header-left {
+            display: flex;
+            align-items: center;
+        }
+
+        .header-left img {
+            margin-right: 10px;
+            height: 40px;
+        }
+
+        .header-left div {
+            font-size: 50px;
+            font-weight: bold;
+        }
+
+        .header-center {
+            display: flex;
+            gap: 20px;
+        }
+
+        .header-center a {
+            text-decoration: none;
+            color: #000;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .header-right {
+            display: flex;
+            gap: 15px;
+        }
+
+        .header-right img {
+            width: 24px;
+            height: 24px;
+            cursor: pointer;
+        }
+
+        .main-content {
+            position: relative;
+            text-align: left;
+            padding: 40px 20px;
+        }
+
+        .main-content img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .text-box {
+            position: absolute;
+            top: 50%;
+            right: 10%;
+            transform: translateY(-50%);
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            font-size: 18px;
+            color: #333;
+            max-width: 40%;
+        }
+
+        .footer-text {
+            margin-top: 30px;
+            font-size: 16px;
+            color: #666;
+            text-align: center;
+        }
+
+        .range-section {
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .range-section h2 {
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+
+        .range-images {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .range-images div {
+            text-align: center;
+        }
+
+        .range-images img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .range-images p {
+            margin-top: 10px;
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .products-section {
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .products-section h2 {
+            font-size: 30px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        .products-grid div {
+            text-align: left;
+        }
+
+        .products-grid img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .products-grid h3 {
+            margin-top: 10px;
+            font-size: 20px;
+            color: #333;
+        }
+
+        .products-grid p {
+            margin-top: 5px;
+            font-size: 16px;
+            color: #666;
+        }
+
+        .products-grid .price {
+            font-size: 18px;
+            color: #000;
+            margin-top: 5px;
+        }
+
+        .products-grid .price del {
+            color: #999;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+
+<body>
+<header class="header">
+    <div class="header-left">
+        <img src="icono.png" />
+        <div>Furniro</div>
+    </div>
+    <nav class="header-center">
+        <a href="#home">Home</a>
+        <a href="#shop">Shop</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <div class="header-right">
+        <img src="lupa.png" />
+        <img src="corazon.png" />
+        <img src="carrito.png" />
+    </div>
+</header>
+<main class="main-content">
+    <img src="background.png"/>
+    <div class="text-box">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis.
+    </div>
+    <div class="footer-text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    </div>
+</main>
+
+<section class="range-section">
+    <h2>Browse The Range</h2>
+    <div class="range-images">
+        <div>
+            <img src="card-1.png" />
+            <p>Dining</p>
+        </div>
+        <div>
+            <img src="card-2.png" />
+            <p>Living</p>
+        </div>
+        <div>
+            <img src="card-3.png" />
+            <p>Bedroom</p>
+        </div>
+    </div>
+</section>
+
+<section class="products-section">
+    <h2>Our Products</h2>
+    <div class="products-grid">
+        <div class="Slytherine">
+            <img src="producto-1.png" />
+            <h3>Slytherine</h3>
+            <p>Stylish cafe chair</p>
+            <p class="price">Rp 2.500.000 <del>Rp 3.500.000</del></p>
+        </div>
+        <div class="Leviosa">
+            <img src="producto-2.png" />
+            <h3>Leviosa</h3>
+            <p>Stylish cafe chair</p>
+            <p class="price">Rp 2.500.000</del></p>
+        </div>
+        <div class="Lolito">
+            <img src="producto-3.png" />
+            <h3>Lolito</h3>
+            <p>Luxury big sofa</p>
+            <p class="price">Rp 7.000.000 <del>Rp 14.500.000</del></p>
+        </div>
+        <div class="Respira">
+            <img src="producto-4.png" />
+            <h3>Respira</h3>
+            <p>Outdoor bar table and stool</p>
+            <p class="price">Rp 500.000</p>
+        </div>
+        <div class="Grifo">
+            <img src="producto-5.png" />
+            <h3>Grifo</h3>
+            <p>Night lamp</p>
+            <p class="price">Rp 1.500.000</p>
+        </div>
+        <div class="Muggo">
+            <img src="producto-6.png" />
+            <h3>Muggo</h3>
+            <p>Small mug</p>
+            <p class="price">Rp 150.000</p>
+        </div>
+        <div class="Pingky">
+            <img src="producto-7.png" />
+            <h3>Pingky</h3>
+            <p>Cute bed set</p>
+            <p class="price">Rp 7.000.000 <del>Rp 14.000.000</del></p>
+        </div>
+        <div class="Potty">
+            <img src="producto-8.png" />
+            <h3>Potty</h3>
+            <p>Minimalist flower pot</p>
+            <p class="price">Rp 500.000</p>
+        </div>
+    </div>
+</section>
+</body>
+
+</html>
